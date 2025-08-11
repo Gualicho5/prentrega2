@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+ 
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body class="bg-light">
+
+  <header class="position-relative py-2 text-center bg-white">
+    <a href="/index.html" class="d-inline-block">
+      <img
+        src="/assets/images/prueba2.png"
+        alt="Logo AS"
+        class="logo-img"
+      />
+    </a>
+  </header>
+
+  <!-- Contenedor principal -->
+  <div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card p-4" id="login-card">
+      <h2 class="text-center mb-4">Iniciar sesión</h2>
+
+      <!-- Formulario de inicio de sesión -->
+      <form action="/login" method="POST">
+        <!-- Campo de usuario -->
+        <div class="mb-3">
+          <label for="username" class="form-label">Usuario</label>
+          <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+
+        <!-- Campo de contraseña -->
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+
+        <!-- Botón de inicio de sesión -->
+        <button type="submit" class="btn btn-success w-100">Entrar</button>
+      </form>
+
+      <!-- Enlace para recuperar contraseña -->
+      <div class="text-center mt-3">
+        <a href="/recover-password" class="text-decoration-none">¿Olvidaste tu contraseña?</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enlace a Bootstrap JS (opcional si necesitas funcionalidades JS como los tooltips o modales) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

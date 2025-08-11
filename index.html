@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>As Estudio de Textiles</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <header class="position-relative py-2 text-center bg-white">
+    <a href="./index.html" class="d-inline-block">
+      <img
+        src="./assets/images/prueba2.png"
+        alt="Logo AS"
+        class="logo-img"
+      />
+    </a>
+
+    <!-- Icono usuario -->
+   <a href="./pages/sesion.html" class="btn-link">
+  <button
+    id="login-button"
+    aria-label="Iniciar sesión"
+    class="btn-login position-absolute top-0 end-0 m-3"
+    title="Iniciar sesión"
+  >
+    <i class="fa-solid fa-user fa-lg"></i>
+  </button>
+</a>
+  </header>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-menu mb-4">
+    <div class="container">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2"><a class="nav-link" href="#">Inicio</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="./pages/galeria.html">Galería</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="./pages/sobre-as.html">Sobre AS</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="./pages/faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container flex-grow-1">
+
+    <!-- Sección con texto vertical a los lados del video -->
+    <section
+      id="inicio"
+      class="d-flex justify-content-center align-items-center mb-5 gap-4 flex-nowrap flex-md-wrap"
+    >
+      <!-- Texto izquierda: +QUE -->
+      <div class="texto-vertical izquierda">
+        <img src="./assets/images/masque.png" alt="+ QUE" class="imagen-vertical img-vertical" />
+      </div>
+
+      <!-- Video -->
+      <div class="video-container flex-grow-1">
+        <video
+          src="./assets/videos/Sin título.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          controls
+          class="video-presentacion"
+        >
+        </video>
+      </div>
+
+      <!-- Texto derecha: FUNDAS -->
+      <div class="texto-vertical derecha">
+        <img src="./assets/images/fundas.png" alt="FUNDAS" class="imagen-vertical img-vertical" />
+      </div>
+    </section>
+
+    <!-- Sección widget redes sociales -->
+    <section id="galeria-redes" class="mb-5 text-center">
+      <h3>Conocé mejor nuestro trabajo</h3>
+      <div class="widget-redes-container my-4">
+        <!-- Widget de redes sociales -->
+        <script
+          id="script-index"
+          class="script-index-class"
+          src="https://static.elfsight.com/platform/platform.js"
+          async
+        ></script>
+        <div
+          id="data-elfsight"
+          class="elfsight-app-86021c53-e203-4d0a-9780-8ea406b60296"
+          data-elfsight-app-lazy
+        ></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-custom py-3 mt-auto text-center">
+    <nav class="mb-3">
+      <a href="./index.html" class="mx-3 text-white text-decoration-none">Inicio</a>
+      <a href="./pages/galeria.html" class="mx-3 text-white text-decoration-none">Galería</a>
+      <a href="./pages/sobre-as.html" class="mx-3 text-white text-decoration-none">Sobre Nosotros</a>
+      <a href="./pages/faq.html" class="mx-3 text-white text-decoration-none">FAQ</a>
+    </nav>
+    <div class="footer-redes mb-3">
+      <a href="https://facebook.com" target="_blank" class="text-white mx-2">
+        <i class="fa-brands fa-facebook fa-lg"></i>
+      </a>
+      <a href="https://www.instagram.com/as.estudiodetextiles/" target="_blank" class="text-white mx-2">
+        <i class="fa-brands fa-instagram fa-lg"></i>
+      </a>
+      <a href="https://wa.me/1234567890" target="_blank" class="text-white mx-2">
+        <i class="fa-brands fa-whatsapp fa-lg"></i>
+      </a>
+    </div>
+    <div class="footer-copy text-white small">
+      &copy; 2025 As Estudio de Textiles. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle (con Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
